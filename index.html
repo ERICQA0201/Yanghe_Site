@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yanghe Liu Personal Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/backend.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #side bar section
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/portrait.jpg" alt="Yanghe Liu image" width="80" class="portrait-img">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Yanghe">Yanghe Liu</h1>
+
+          <p class="title">CS Student at University of Michigan
+            <br>
+            Full Stack Developer
+            </p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+
+              <img src="./assets/images/email.png" alt="email-icon" width="40">
+
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:richard@example.com" class="contact-link">ericqa0201@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <img src="./assets/images/google-maps.png" alt="location-icon" width="40">
+
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Ann Arbor, Michigan, USA</address>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+
+            <img src="./assets/images/smartphone.png" alt="email-icon" width="40">
+
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+1 (608) 471-0176</a>
+            </div>
+
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+      </div>
+
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 resume-title">About</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm currently pursuing a degree in Computer Science at the University of Michigan's College of Engineering and 
+            will graduate in April 2024. As the founder of ResuMASTER.AI studio, I've developed an AI-powered resume-tailoring 
+            app named ResuMASTER.AI. Our App already helped 1000+ users to revise their resume & cover letter to match their dream 
+            jobs. My expertise spans software and web app development, web systems, web designs, database management systems, and AI/machine 
+            learning.
+          </p>
+
+          <p>
+            Last summer, I served as a software development intern at Solve Education Foundation, where I've contributed to the 
+            development and maintenance of the company's chatbot. Additionally, I've had the experience of working as a Web Application 
+            Developer for a research team at the University of Michigan.
+          </p>
+        </section>
+
+
+        <!--
+          - fields
+        -->
+
+        <section class="fields">
+
+          <h3 class="h3 fields-title">My Fields</h3>
+
+          <ul class="fields-list">
+
+            <li class="work-item">
+
+              <div class="fields-icon-box">
+                <img src="./assets/images/backend.png" alt="Web system development icon" width="100">
+              </div>
+
+              <div class="fields-content-box">
+                <h4 class="h4 work-item-title">Web Systems development</h4>
+
+                <p class="work-item-text">
+                  Development of the web systems including API servers, Distributed Systems, and Client-side server development
+                </p>
+              </div>
+
+            </li>
+
+            <li class="work-item">
+
+              <div class="fields-icon-box">
+                <img src="./assets/images/database.png
+                " alt="design icon" width="80">
+              </div>
+
+              <div class="fields-content-box">
+                <h4 class="h4 work-item-title">Database management</h4>
+
+                <p class="work-item-text">
+                  Database management of both SQL and NoSQL databases. Proficient in MySQL and MongoDB
+                </p>
+              </div>
+
+            </li>
+
+            <li class="work-item">
+
+              <div class="fields-icon-box">
+                <img src="./assets/images/ai-brain.png" alt="mobile app icon" width="100">
+              </div>
+
+              <div class="fields-content-box">
+                <h4 class="h4 work-item-title">Generative AI</h4>
+
+                <p class="work-item-text">
+                  Developed generative AI project: Resumaster.AI to help users to tailor their resume to match the specific job descriptions
+                </p>
+              </div>
+
+            </li>
+
+            <li class="work-item">
+
+              <div class="fields-icon-box">
+                <img src="./assets/images/web-design.png" alt="camera icon" width="50">
+              </div>
+
+              <div class="fields-content-box">
+                <h4 class="h4 work-item-title">Web/UI Design & Development</h4>
+
+                <p class="work-item-text">
+                  I designed and developed the high-quality web page
+                </p>
+              </div>
+
+            </li>
+
+            <li class="work-item">
+
+              <div class="fields-icon-box">
+                <img src="./assets/images/computer.png" alt="camera icon" width="80">
+              </div>
+
+              <div class="fields-content-box">
+                <h4 class="h4 work-item-title">Machine Learning & Computer Vision</h4>
+
+                <p class="work-item-text">
+                  I have research experiences in both Machine Learning and Computer Vision (Deep Learning)
+                </p>
+              </div>
+
+            </li>
+
+            <li class="work-item">
+
+              <div class="fields-icon-box">
+                <img src="./assets/images/still-life.png" alt="camera icon" width="80">
+              </div>
+
+              <div class="fields-content-box">
+                <h4 class="h4 work-item-title">Life Drawing</h4>
+
+                <p class="work-item-text">
+                  I enjoyed Life Drawing! I frequently attend to the studio for drawing!
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 resume-title">Resume</h2>
+        </header>
+
+        <a href="assets/documents/CV_LYH.pdf" download="Yanghe_Liu_Resume.pdf" class="download-button">Download My Resume</a>
+
+        <section class="experience">
+
+          <div class="title-wrapper">
+            <img src="./assets/images/school.png" alt="university-icon" width="50">
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="experience-list">
+
+            <div>
+
+              <h4 class="h4 experience-item-title">University of Michigan</h4>
+
+              <span>2021 - 2024</span>
+
+              <p class="experience-description">
+                Bachelor of Science in Engineering in Computer Science
+              </p>
+
+              <p class="experience-description">
+                GPA: 3.91/4.00
+              </p>
+              <p class="experience-description">
+              Main Coursework: Machine Learning, Web Applications & Web Systems, Database Management Systems, Computer 
+              Vision, Data Structure and Algorithm, Computer Architecture, Statistics & Data Analysis, Web Design
+              </p>
+              <p class="experience-description">
+                Dean's honor list: Winter 2023, Winter 2022, Fall 2021
+              </p>
+
+            </div>
+
+            <div>
+
+              <h4 class="h4 experience-item-title">University of Wisoconsin - Madison</h4>
+
+              <span>2020 - 2021</span>
+
+              <p class="experience-description">
+                Bachelor of Science
+              </p>
+              <p class="experience-description">
+                GPA: 4.00/4.00
+              </p>
+              <p class="experience-description">
+                Main Coursework: Data structure, Algorithems, Programming, Introduction to Computer Engineering
+              </p>
+
+            </div>
+
+          </ol>
+
+        </section>
+
+        <section class="experience">
+
+          <div class="title-wrapper">
+            <img src="./assets/images/experiment.png" alt="experience-icon" width="50">
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="experience-list">
+
+            <li class="experience-item">
+              <h4 class="experience-item-title">Founder of ResuMASTER.AI Studio</h4>
+              <span>January 2023 – In progress</span>
+              <ul class="experience-description-list"> <!-- Updated class name -->
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Form a team to create an application for tailoring resumes and cover letters to specific job descriptions
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Applied Python Flask to construct a REST API server capable of modifying work and project experiences extracted from a 
+                  PDF file, and returning the revised content as a JSON file
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Devised prompts to optimally interact with the GPT 4.0 API, ensuring the high quality of the content
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Utilized Figma and React to create the user interface and facilitate client-server communication
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Developed the authentication system of the website using MySQL that securely stores the user’s information
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Deployed this App on AWS using Gunicorn and utilized Nginx as a reverse proxy to enhance security
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Assisted over 1500 clients with resume revisions in 10 weeks, earning a 4.5/5 satisfaction rate
+                </li>
+              </ul>
+            </li>
+          
+            <li class="experience-item">
+              <h4 class="h4 experience-item-title">Software Development Intern at Solve Education!</h4>
+              <span>June 2023 - August 2023</span>
+              <ul class="experience-description-list"> <!-- Updated class name -->
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Developed a chatbot in Python that can generate fun English exercises and interact with children
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Transitioned chatbot data system from Pickle-based storage to a NoSQL MongoDB database to enhance scalability and data 
+                  management efficiency while successfully reducing error reports by 10%
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Utilized Python’s Telegram Bot Library to generate text responses based on user input
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Improved the function that can check the status of the mission queue and generate reports
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Created an API endpoint to return users’ LA codes and display these codes in the reply of the chatbot
+                </li>
+              </ul>
+            </li>
+
+            <li class="experience-item">
+              <h4 class="h4 experience-item-title">Researcher & Web Application Developer at University of Michigan</h4>
+              <span>November 2022 – March 2023</span>
+              <ul class="experience-description-list"> <!-- Updated class name -->
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Developed a web Application for psychological research using Python and Flask web framework
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Designed an online experiment that guides participants to play the games and answer the questions
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Implemented the database using MySQL to securely record participants’ choices in the survey and experiment
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Designed and developed a user-friendly user interface for the web app using CSS, HTML5, and JavaScript
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Refined the code to guarantee smooth server operation under the load of 400 concurrent users
+                </li>
+              </ul>
+            </li>
+
+            <li class="experience-item">
+              <h4 class="h4 experience-item-title">Researcher at SOCR Research Team</h4>
+              <span>January 2023- In Progress</span>
+              <ul class="experience-description-list"> <!-- Updated class name -->
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Used new ML models to systematize and perform detailed analysis of medical data
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Developed an online clustering app for SOCR to cluster data based on user needs using clustering methods such as 
+                  Hierarchical Clustering, Spectral Clustering, Fuzzy C-Means Clustering, Poisson Clustering, and Decision Tree Clustering, 
+                  and analyze data using one-way ANOVA calculation
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Develop a pairwise ANOVA test to identify the pair of groups that are most similar or different, based on their p-values
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Created the secondary functions of the clustering App, such as allowing users to download CSV files and clustering result
+                </li>
+                <li class="experience-description-item"> <!-- Updated class name -->
+                  Collaborated with the distribution calculator Team to provide both the clustering and distribution calculator fieldss
+                </li>
+              </ul>
+            </li>
+          
+          </ol>
+
+        </section>
+
+
+        <section>
+        <h3 class="h3">Skills</h3>
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            C/C++
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            Python
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            Java
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            Flask
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            HTTP
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            XML
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            REST API
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            SAAS
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            JavaScript
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            MySQL
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            MongoDB
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            React
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            HTML5/CSS
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            Hadoop
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            Git
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            Linux
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            R
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            Visual Studio
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            TCP/IP Protocal
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            Gunicorn
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            Nginx
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            C#
+          </div>
+        </div>
+
+        <div class="skills-wrapper">
+          <div class="skill_box">
+            PHP
+          </div>
+        </div>
+        </section>
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="Projects" data-page="projects">
+
+        <header>
+          <h2 class="h2 resume-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-select-value>Select Category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://resumaster.ai/">
+
+                <figure class="project-img">
+                  <img src="./assets/images/resumaster_ai (2).png" alt="resumaster_ai image" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Resumaster.AI</h3>
+
+                <p class="project-category">Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="https://rcompute.nursing.umich.edu/SOCR_Clustering/">
+
+                <figure class="project-img">
+                  <img src="./assets/images/SOCR_clustering.png" alt="SOCR clustering App Image" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">SOCR Clustering Calculator</h3>
+
+                <p class="project-category">Application</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://ericqa0201.github.io/final_view/">
+
+                <figure class="project-img">
+                  <img src="./assets/images/cat.png" alt="website of cat, recipe, and travel image" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Pets! Recipes! Travel!</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
