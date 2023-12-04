@@ -15,19 +15,19 @@ side_columnBtn.addEventListener("click", function () { elementToggleFunc(side_co
 
 // page navigation variables
 const navigation_elements = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
+const Different_pages = document.querySelectorAll("[data-page]");
 
 // add event to all nav link
 for (let i = 0; i < navigation_elements.length; i++) {
   navigation_elements[i].addEventListener("click", function () {
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
+    for (let i = 0; i < Different_pages.length; i++) {
+      if (this.innerHTML.toLowerCase() === Different_pages[i].dataset.page) {
+        Different_pages[i].classList.add("active");
         navigation_elements[i].classList.add("active");
         window.scrollTo(0, 0);
       } else {
-        pages[i].classList.remove("active");
+        Different_pages[i].classList.remove("active");
         navigation_elements[i].classList.remove("active");
       }
     }
@@ -39,7 +39,6 @@ for (let i = 0; i < navigation_elements.length; i++) {
 
 // custom select variables
 const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-select-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
