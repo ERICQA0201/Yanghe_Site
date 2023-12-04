@@ -1,86 +1,53 @@
 :root {
+  /* font we use */
+  --poppins_font: 'Poppins', sans-serif;
 
   /**
-   * colors
+   * transition definitions
    */
-
-
-  /* solid */
-
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
-
-  /**
-   * typography
-   */
-
-  /* font-family */
-  --ff-poppins: 'Poppins', sans-serif;
-
-  /* font-size */
-  --fs-1: 24px;
-  --fs-2: 18px;
-  --fs-3: 17px;
-  --fs-4: 16px;
-  --fs-5: 15px;
-  --fs-6: 14px;
-  --fs-7: 13px;
-  --fs-8: 11px;
-
-  /* font-weight */
-  --fw-300: 300;
-  --fw-400: 400;
-  --fw-500: 500;
-  --fw-600: 600;
-
-  /**
-   * shadow
-   */
-  
-  --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
-  --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
-  --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
-  --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
-  --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
-
-  /**
-   * transition
-   */
-
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
-
 }
 
 
 
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
-
+/* Initialize CSS code for some default settings */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+img, ion-icon, a, button, time, span { display: block; }
+
+input, textarea {
+  display: block;
+  width: 100%;
+  background: none;
+  font: inherit;
+}
+
 a { text-decoration: none; }
 
 li { list-style: none; }
 
-img, ion-icon, a, button, time, span { display: block; }
+
+
+:focus { 
+  outline: none; /* This removes the default focus outline */
+  border: 2px solid #8864eb; /* This adds a dark purple border */
+}
+
+html { font-family: var(--poppins_font); }
+
+body { 
+    background-color: #6750a4;
+ }
+
+ ::selection {
+  background: #6750a4;
+  color: hsl(0, 0%, 7%);
+}
 
 button {
   font: inherit;
@@ -90,52 +57,26 @@ button {
   cursor: pointer;
 }
 
-input, textarea {
-  display: block;
-  width: 100%;
-  background: none;
-  font: inherit;
-}
-
-::selection {
-  background: #6750a4;
-  color: var(--smoky-black);
-}
-
-:focus { 
-  outline: none; /* This removes the default focus outline */
-  border: 2px solid #8864eb; /* This adds a dark purple border */
-}
-
-html { font-family: var(--ff-poppins); }
-
-body { 
-    background-color: #6750a4;
- }
-
-
-
-
 
 /*-----------------------------------*\
-  #REUSED STYLE
+  #Reapplied Styele for later responsive option
 \*-----------------------------------*/
 
-.sidebar,
+.side_column,
 article {
   background-color: #e8e3ff;
-  border: 1px solid var(--jet);
+  border: 1px solid hsl(0, 0%, 22%);
   border-radius: 20px;
   padding: 15px;
-  box-shadow: var(--shadow-1);
+  box-shadow: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   z-index: 1;
 }
 
 .separator {
   width: 100%;
   height: 1px;
-  background: var(--jet);
-  margin: 16px 0;
+  background: hsl(0, 0%, 22%);
+  margin: 15px 0;
 }
 
 .icon-box {
@@ -156,7 +97,7 @@ article {
   content: "";
   position: absolute;
   inset: 1px;
-  background: var(--eerie-black-1);
+  background: hsl(240, 2%, 13%);
   border-radius: inherit;
   z-index: -1;
 }
@@ -170,11 +111,6 @@ article.active {
   animation: fade 0.5s ease backwards;
 }
 
-@keyframes fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 .h2,
 .h3,
 .h4,
@@ -184,15 +120,15 @@ article.active {
   margin-bottom: 10px;
 }
 
-.h2 { font-size: var(--fs-1); }
+.h2 { font-size: 24px; }
 
-.h3 { font-size: var(--fs-2); }
+.h3 { font-size: 18px; }
 
-.h4 { font-size: var(--fs-4); }
+.h4 { font-size: 16px; }
 
 .h5 {
-  font-size: var(--fs-7);
-  font-weight: var(--fw-500);
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .resume-title {
@@ -211,47 +147,8 @@ article.active {
   border-radius: 3px;
 }
 
-.has-scrollbar::-webkit-scrollbar {
-  width: 5px; /* for vertical scrollbar */
-  height: 5px; /* for horizontal scrollbar */
-}
-
-.has-scrollbar::-webkit-scrollbar-track {
-  background: var(--onyx);
-  border-radius: 5px;
-}
-
-.has-scrollbar::-webkit-scrollbar-thumb {
-  background: var(--orange-yellow-crayola);
-  border-radius: 5px;
-}
-
-.has-scrollbar::-webkit-scrollbar-button { width: 15px; }
-
-/* .content-card {
-  position: relative;
-  background: var(--border-gradient-onyx);
-  padding: 15px;
-  padding-top: 45px;
-  border-radius: 14px;
-  box-shadow: var(--shadow-2);
-  cursor: pointer;
-  z-index: 1;
-}
-
-.content-card::before {
-  content: "";
-  position: absolute;
-  inset: 1px;
-  background: var(--bg-gradient-jet);
-  border-radius: inherit;
-  z-index: -1;
-} */
-
-
-
 /*-----------------------------------*\
-  #MAIN of the page
+  # Main section of the page
 \*-----------------------------------*/
 
 main {
@@ -261,19 +158,19 @@ main {
 }
 
 /*-----------------------------------*\
-  #SIDEBAR of the page
+  # side_column
 \*-----------------------------------*/
 
-.sidebar {
+.side_column {
   margin-bottom: 15px;
   max-height: 112px;
   overflow: hidden;
   transition: var(--transition-2);
 }
 
-.sidebar.active { max-height: 405px; }
+.side_column.active { max-height: 405px; }
 
-.sidebar-info {
+.side_column-info {
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -288,21 +185,18 @@ main {
 
 .info-content .name {
   color: #111111;
-  font-size: var(--fs-3);
-  font-weight: var(--fw-500);
+  font-size: 17px;
+  font-weight: 500;
   letter-spacing: -0.25px;
   margin-bottom: 10px;
   font-style: italic;
 }
 
 .info-content .title {
-  color: var(--white-1);
-  background: var(--onyx);
-  font-size: var(--fs-8);
-  font-weight: var(--fw-300);
+  color: #28262c;
+  font-size: 14px;
+  font-weight: 500;
   width: max-content;
-  padding: 3px 12px;
-  border-radius: 8px;
 }
 
 .info_more-btn {
@@ -316,7 +210,7 @@ main {
   color: #39227a;
   background: #ffffff;
   padding: 12px;
-  box-shadow: var(--shadow-2);
+  box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   transition: var(--transition-1);
   z-index: 1;
 }
@@ -339,13 +233,13 @@ main {
 
 .info_more-btn span { display: none; }
 
-.sidebar-info_more {
+.side_column-info_more {
   opacity: 0;
   visibility: hidden;
   transition: var(--transition-2);
 }
 
-.sidebar.active .sidebar-info_more {
+.side_column.active .side_column-info_more {
   opacity: 1;
   visibility: visible;
 }
@@ -370,14 +264,14 @@ main {
 
 .contact-title {
   color: #474749;
-  font-size: var(--fs-8);
+  font-size: 11px;
   text-transform: uppercase;
   margin-bottom: 2px;
 }
 
 .contact-info :is(.contact-link, time, address) {
   color: #111111;
-  font-size: var(--fs-7);
+  font-size: 14px;
 }
 
 .contact-info address { font-style: normal; }
@@ -387,7 +281,7 @@ main {
 }
 
 /*-----------------------------------*\
-  #NAVBAR
+  #Navigation bar section
 \*-----------------------------------*/
 
 .navbar {
@@ -397,9 +291,9 @@ main {
   width: 100%;
   background: #28262c;
   backdrop-filter: blur(10px);
-  border: 1px solid var(--jet);
+  border: 1px solid hsl(0, 0%, 22%);
   border-radius: 5px 5px 0 0;
-  box-shadow: var(--shadow-2);
+  box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   z-index: 5;
 }
 
@@ -409,28 +303,24 @@ main {
   justify-content: center;
   align-items: center;
   padding: 0 10px;
+  gap: 70px;
 }
 
 .navbar-link {
   color: #dacff7;
-  font-size: var(--fs-8);
+  font-size: 17px;
   padding: 20px 7px;
   transition: color var(--transition-1);
 }
 
 .navbar-link:hover,
-.navbar-link:focus { color: var(--light-gray-70); }
+.navbar-link:focus { color: #f8edb4; }
 
 .navbar-link.active { color: #f2cb09; }
 
 
 
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
-
+/* About section */
 .about .resume-title { 
   margin-bottom: 15px; 
   color: #353536;
@@ -439,7 +329,7 @@ main {
 .about-text {
   color: #353536;
   font-size: 16px;
-  font-weight: var(--fw-300);
+  font-weight: 300;
   line-height: 1.6;
 }
 
@@ -471,7 +361,7 @@ main {
   background: var(--border-gradient-onyx);
   padding: 20px;
   border-radius: 14px;
-  box-shadow: var(--shadow-2);
+  box-shadow: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   z-index: 1;
 }
 
@@ -497,13 +387,13 @@ main {
 
 .work-item-text {
   color: #353536;
-  font-size: var(--fs-6);
-  font-weight: var(--fw-3);
+  font-size: 14px;
+  font-weight: 300;
   line-height: 1.6;
 }
 
 /*-----------------------------------*\
-  #RESUME
+  #RESUME & EXPERIENCE part
 \*-----------------------------------*/
 
 .resume-title { 
@@ -526,7 +416,7 @@ main {
 }
 
 .experience-list {
-  font-size: var(--fs-6);
+  font-size: 14px;
   margin-left: 45px;
 }
 
@@ -612,7 +502,7 @@ a.download-button:hover, a.download-button:focus {
 
 
 /*-----------------------------------*\
-  #PORTFOLIO
+  #Projects
 \*-----------------------------------*/
 
 .filter-list { display: none; }
@@ -634,17 +524,15 @@ a.download-button:hover, a.download-button:focus {
 
 .select-item button {
   background: hsl(240, 2%, 10%);
-  color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  color: hsl(0, 0%, 84%);
+  font-size: 14px;
+  font-weight: 300;
   text-transform: capitalize;
   width: 120px;
   height: 40px;
   padding: 8px 10px;
   border-radius: 8px;
 }
-
-.select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
 
 .project-list {
   display: grid;
@@ -700,21 +588,21 @@ a.download-button:hover, a.download-button:focus {
 
 .project-title {
   color: #28262c;
-  font-size: var(--fs-5);
-  font-weight: var(--fw-400);
+  font-size: 15px;
+  font-weight: 400;
   text-transform: capitalize;
   line-height: 1.3;
 }
 
 .project-category {
   color: #28262c;
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
+  font-size: 14px;
+  font-weight: 300;
 }
 
 
 /*-----------------------------------*\
-  #RESPONSIVE
+  #responsive design section
 \*-----------------------------------*/
 
 /**
@@ -723,7 +611,7 @@ a.download-button:hover, a.download-button:focus {
 
 @media (min-width: 450px) {
   /**
-   * #PORTFOLIO, BLOG 
+   * #Projects
    */
   .project-img { height: auto; }
 }
@@ -736,10 +624,10 @@ a.download-button:hover, a.download-button:focus {
 @media (min-width: 580px) {
 
   /**
-   * #REUSED STYLE
+   * #Reapplied style
    */
 
-  .sidebar, article {
+  .side_column, article {
     width: 520px;
     margin-inline: auto;
     padding: 30px;
@@ -749,19 +637,19 @@ a.download-button:hover, a.download-button:focus {
 
 
 /**
- * responsive larger than 768px screen
+ * responsive for template
  */
 
 @media (min-width: 768px) {
 
   /**
-   * REUSED STYLE
+   * reapplied style
    */
-  .sidebar, article { width: 710px; }
+  .side_column, article { width: 710px; }
 
 
   /**
-   * SIDEBAR
+   * side_column section
    */
 
   .contacts-list {
@@ -770,14 +658,14 @@ a.download-button:hover, a.download-button:focus {
   }
 
   /**
-   * NAVBAR
+   * Navigation bar section
    */
 
   .navbar-link { --fs-8: 15px; }
 
 
   /**
-   * PORTFOLIOm make this visible
+   * Projects make this visible, only have the filter when the screen is large enough
    */
 
   .filter-select-box { display: none; }
@@ -801,7 +689,7 @@ a.download-button:hover, a.download-button:focus {
 
   .filter-item button.active { color: rgb(143, 9, 177); }
 
-  /* portfolio and blog grid */
+  /* Projects and blog grid */
 
   .project-list {
     display: grid;
@@ -811,23 +699,22 @@ a.download-button:hover, a.download-button:focus {
 
 
 /**
- * responsive larger than 1024px screen
+ * responsive larger for smaller laptop
  */
 @media (min-width: 1024px) {
 
-
   /**
-   * REUSED STYLE
+   * reapplied style
    */
 
-  .sidebar, article {
+  .side_column, article {
     width: 950px;
-    box-shadow: var(--shadow-5);
+    box-shadow: 0 24px 80px hsla(0, 0%, 0%, 0.25);
   }
 
 
   /**
-   * NAVBAR
+   * navigation bar section
    */
   .navbar-list {
     gap: 90px;
@@ -835,14 +722,14 @@ a.download-button:hover, a.download-button:focus {
   }
 
   .navbar-link { 
-    font-weight: var(--fw-500); 
+    font-weight: 500; 
     font-size: 18px;
   }
 
 
 
   /**
-   * ABOUT
+   * ABOUT section
    */
 
   /* fields */
@@ -853,7 +740,7 @@ a.download-button:hover, a.download-button:focus {
   }
 
   /**
-   * PORTFOLIO
+   * Projects
    */
 
   .project-list { grid-template-columns: 1fr 1fr 1fr; }
@@ -862,7 +749,7 @@ a.download-button:hover, a.download-button:focus {
 
 
 /**
- * responsive larger than 1250px screen
+ * Normal size latpop or PC responsive
  */
 
 @media (min-width: 1250px) {
@@ -871,12 +758,12 @@ a.download-button:hover, a.download-button:focus {
    * REUSED STYLE
    */
 
-  .sidebar, article { width: auto; }
+  .side_column, article { width: auto; }
 
   article { min-height: 100%; }
 
   /**
-   * MAIN
+   * MAIN section
    */
 
   .main-content {
@@ -894,11 +781,11 @@ a.download-button:hover, a.download-button:focus {
   }
 
   /**
-   * SIDEBAR
+   * side_column, make this side bar on the left 1/4 section of the page
    */
 
-  .sidebar {
-    position: sticky;
+  .side_column {
+    position: sticky;  /*sticky make this section stick with the user */
     top: 10px;
     max-height: max-content;
     height: 100%;
@@ -907,7 +794,7 @@ a.download-button:hover, a.download-button:focus {
     z-index: 1;
   }
 
-  .sidebar-info { flex-direction: column; }
+  .side_column-info { flex-direction: column; }
 
   .avatar-box img { width: 160px; }
 
@@ -917,7 +804,7 @@ a.download-button:hover, a.download-button:focus {
 
   .info_more-btn { display: none; }
 
-  .sidebar-info_more {
+  .side_column-info_more {
     opacity: 1;
     visibility: visible;
   }
@@ -925,12 +812,11 @@ a.download-button:hover, a.download-button:focus {
   .contacts-list { grid-template-columns: 1fr; }
 
   .separator:last-of-type {
-    margin: 15px 0;
     opacity: 0;
   }
 
   /**
-	 * RESUME
+	 * RESUME & EXPERIENCE SECTION
 	 */
   .experience-description { max-width: 650px; }
 }

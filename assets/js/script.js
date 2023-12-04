@@ -3,12 +3,12 @@ const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
 
 
-// sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
+// side_column variables
+const side_column = document.querySelector("[data-side_column]");
+const side_columnBtn = document.querySelector("[data-side_column-btn]");
 
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
+// side_column toggle functionality for mobile
+side_columnBtn.addEventListener("click", function () { elementToggleFunc(side_column); });
 
 
 //------------------------------------navigation part------------------------------------------------
