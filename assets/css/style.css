@@ -149,6 +149,32 @@ article.activate {
   border-radius: 3px;
 }
 
+
+  #skipToMain {
+    position: absolute;
+    left: -999px;
+    top: -999px;
+    z-index: 100;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #e5b405; 
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 40px;
+  }
+  
+  #skipToMain:focus {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+
 /*-----------------------------------*\
   # Main section of the page
 \*-----------------------------------*/
