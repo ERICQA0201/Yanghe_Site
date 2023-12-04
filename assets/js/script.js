@@ -1,7 +1,3 @@
-'use strict';
-
-
-
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
@@ -47,19 +43,6 @@ const selectItems = document.querySelectorAll("[data-select-item]");
 const selectValue = document.querySelector("[data-select-value]");
 const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-// select.addEventListener("click", function () { elementToggleFunc(this); });
-
-// // add event in all select items
-// for (let i = 0; i < selectItems.length; i++) {
-//   selectItems[i].addEventListener("click", function () {
-
-//     let selectedValue = this.innerText.toLowerCase();
-//     selectValue.innerText = this.innerText;
-//     elementToggleFunc(select);
-//     filterFunc(selectedValue);
-
-//   });
-// }
 
 // filter variables
 const fiter_elements = document.querySelectorAll("[data-filter-item]");
@@ -78,8 +61,7 @@ const filterFunc = function (selectedValue) {
 
 }
 
-
-// add event in all filter button items for large screen
+// select filter for only the destop view
 let lastClickedBtn = filterBtn[0];
 
 for (let i = 0; i < filterBtn.length; i++) {
