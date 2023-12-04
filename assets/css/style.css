@@ -150,7 +150,7 @@ article.activate {
 }
 
 
-  #skipToMain {
+  .skipToMain {
     position: absolute;
     left: -999px;
     top: -999px;
@@ -169,7 +169,7 @@ article.activate {
     margin-bottom: 40px;
   }
   
-  #skipToMain:focus {
+  .skipToMain:focus {
     position: absolute;
     left: 10px;
     top: 10px;
