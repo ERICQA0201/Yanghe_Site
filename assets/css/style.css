@@ -106,7 +106,7 @@ article {
 
 article { display: none; }
 
-article.active {
+article.activate {
   display: block;
   animation: fade 0.5s ease backwards;
 }
@@ -170,7 +170,7 @@ main {
   transition: var(--transition-2);
 }
 
-.side_column.active { max-height: 405px; }
+.side_column.activate { max-height: 405px; }
 
 .side_column-info {
   position: relative;
@@ -241,7 +241,7 @@ main {
   transition: var(--transition-2);
 }
 
-.side_column.active .side_column-info_more {
+.side_column.activate .side_column-info_more {
   opacity: 1;
   visibility: visible;
 }
@@ -318,7 +318,7 @@ main {
 .navbar-link:hover,
 .navbar-link:focus { color: #f8edb4; }
 
-.navbar-link.active { color: #f2cb09; }
+.navbar-link.activate { color: #f2cb09; }
 
 
 
@@ -545,7 +545,7 @@ a.download-button:hover, a.download-button:focus {
 
 .project-item { display: none; }
 
-.project-item.active {
+.project-item.activate {
   display: block;
   animation: scaleUp 0.25s ease forwards;
 }
@@ -689,7 +689,7 @@ a.download-button:hover, a.download-button:focus {
 
   .filter-item button:hover { color: rgb(196, 156, 206); }
 
-  .filter-item button.active { color: rgb(143, 9, 177); }
+  .filter-item button.activate { color: rgb(143, 9, 177); }
 
   /* Projects and blog grid */
 

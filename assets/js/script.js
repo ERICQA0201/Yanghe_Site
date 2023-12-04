@@ -1,8 +1,3 @@
-// element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
-
-
-
 // side_column variables
 const side_column = document.querySelector("[data-side_column]");
 const side_columnBtn = document.querySelector("[data-side_column-btn]");
@@ -10,9 +5,10 @@ const side_columnBtn = document.querySelector("[data-side_column-btn]");
 // side_column toggle functionality for mobile
 side_columnBtn.addEventListener("click", function () { elementToggleFunc(side_column); });
 
+const elementToggleFunc = function (elem) { elem.classList.toggle("activate"); }
+
 
 //------------------------------------navigation part------------------------------------------------
-
 // page navigation variables
 const navigation_elements = document.querySelectorAll("[data-nav-link]");
 const Different_pages = document.querySelectorAll("[data-page]");
@@ -23,12 +19,12 @@ for (let i = 0; i < navigation_elements.length; i++) {
 
     for (let i = 0; i < Different_pages.length; i++) {
       if (this.innerHTML.toLowerCase() === Different_pages[i].dataset.page) {
-        Different_pages[i].classList.add("active");
-        navigation_elements[i].classList.add("active");
+        Different_pages[i].classList.add("activate");
+        navigation_elements[i].classList.add("activate");
         window.scrollTo(0, 0);
       } else {
-        Different_pages[i].classList.remove("active");
-        navigation_elements[i].classList.remove("active");
+        Different_pages[i].classList.remove("activate");
+        navigation_elements[i].classList.remove("activate");
       }
     }
 
@@ -51,9 +47,9 @@ const filterFunc = function (selectedValue) {
   for (let i = 0; i < fiter_elements.length; i++) {
 
     if (selectedValue === "all" || selectedValue === fiter_elements[i].dataset.category) {
-      fiter_elements[i].classList.add("active");
+      fiter_elements[i].classList.add("activate");
     } else {
-      fiter_elements[i].classList.remove("active");
+      fiter_elements[i].classList.remove("activate");
     }
 
   }
@@ -71,8 +67,8 @@ for (let i = 0; i < filterBtn.length; i++) {
     selectValue.innerText = this.innerText;
     filterFunc(selectedValue);
 
-    lastClickedBtn.classList.remove("active");
-    this.classList.add("active");
+    lastClickedBtn.classList.remove("activate");
+    this.classList.add("activate");
     lastClickedBtn = this;
 
   });
